@@ -6,7 +6,8 @@ import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user/user.component';
 import { EventsComponent } from './events/events.component';
 import { CreateComponent } from './events/create/create.component';
-import { ViewComponent } from './events/view/view.component';
+import { EventListComponent } from './events/event-list/event-list.component';
+import { EventDetailComponent } from './events/event-detail/event-detail.component';
 
 export const appState = {
   name: 'app',
@@ -50,16 +51,22 @@ export const eventState = {
   component: EventsComponent,
 };
 
+export const eventListState = {
+  name: 'events.list',
+  url: '/list',
+  component: EventListComponent,
+};
+
+export const eventDetailState = {
+  name: 'events.detail',
+  url: '/detail',
+  component: EventDetailComponent,
+};
+
 export const createState = {
   name: 'events.create',
   url: '/create',
   component: CreateComponent,
-};
-
-export const viewState = {
-  name: 'events.view',
-  url: '/view',
-  component: ViewComponent,
 };
 
 export const APP_STATES = [
@@ -70,6 +77,7 @@ export const APP_STATES = [
   serversState,
   userState,
   eventState,
-  createState,
-  viewState
+  eventListState,
+  eventDetailState,
+  createState
 ];

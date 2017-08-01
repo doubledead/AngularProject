@@ -17,7 +17,8 @@ import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user/user.component';
 import { EventsComponent } from './events/events.component';
 import { CreateComponent } from './events/create/create.component';
-import { ViewComponent } from './events/view/view.component';
+import { EventListComponent } from './events/event-list/event-list.component';
+import { EventDetailComponent } from './events/event-detail/event-detail.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ViewComponent } from './events/view/view.component';
     UserComponent,
     EventsComponent,
     CreateComponent,
-    ViewComponent
+    EventListComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
