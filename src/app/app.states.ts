@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user/user.component';
+import { EventsComponent } from './events/events.component';
+import { CreateComponent } from './events/create/create.component';
+import { ViewComponent } from './events/view/view.component';
 
 export const appState = {
   name: 'app',
@@ -41,11 +44,32 @@ export const userState = {
   component: UserComponent,
 };
 
+export const eventState = {
+  name: 'events',
+  url: '/events',
+  component: EventsComponent,
+};
+
+export const createState = {
+  name: 'events.create',
+  url: '/create',
+  component: CreateComponent,
+};
+
+export const viewState = {
+  name: 'events.view',
+  url: '/view',
+  component: ViewComponent,
+};
+
 export const APP_STATES = [
   appState,
   welcomeState,
   homeState,
   aboutState,
   serversState,
-  userState
+  userState,
+  eventState,
+  createState,
+  viewState
 ];

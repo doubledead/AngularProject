@@ -1,3 +1,7 @@
-<div class="container">
-  <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<div class="row">
+  <!-- they take JS object -->
+  <p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online'}">
+    <!--{{ 'name' }} with ID {{ id }} is {{ getServerStatus() }}-->
+    {{ server.name }}, created {{ server.created }}, with ID {{ server.id }} is {{ getServerStatus() }}
+  </p>
 </div>

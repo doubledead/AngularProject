@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  userName = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  resetUserName() {
+    if (this.userName.length > 0)
+    {
+      this.userName = '';
+    }
   }
 
 }

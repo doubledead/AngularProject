@@ -15,6 +15,9 @@ import { NavComponent } from './nav/nav.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user/user.component';
+import { EventsComponent } from './events/events.component';
+import { CreateComponent } from './events/create/create.component';
+import { ViewComponent } from './events/view/view.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { UserComponent } from './user/user.component';
     NavComponent,
     ServerComponent,
     ServersComponent,
-    UserComponent
+    UserComponent,
+    EventsComponent,
+    CreateComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
