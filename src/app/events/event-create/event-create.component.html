@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="page-header">
+    <h2>Create</h2>
+  </div>
+</div>
+<div class="container">
+  <ul class="breadcrumb">
+    <li><a uiSref="events.create.name">Name</a></li>
+    <li><a uiSref="events.create.details">Details</a></li>
+    <li><a uiSref="events.create.guests">Guests</a></li>
+  </ul>
+</div>
+<div class="container">
+  <form eventForm role="form">
+    <div class="form-group row">
+      <div class="col-xs-2">
+        <label for="eventName">Event Name</label>
+        <input type="text" class="form-control input-sm" name="eventName" [(ngModel)]="name">
+      </div>
+    </div>
+  </form>
+  <button class="btn btn-primary">
+    Add Event
+  </button>
+</div>
+<div class="container">
+  <ui-view></ui-view>
+</div>

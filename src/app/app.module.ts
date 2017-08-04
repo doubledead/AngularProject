@@ -12,13 +12,18 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user/user.component';
 import { EventsComponent } from './events/events.component';
-import { CreateComponent } from './events/create/create.component';
 import { EventListComponent } from './events/event-list/event-list.component';
 import { EventDetailComponent } from './events/event-detail/event-detail.component';
+import { EventItemComponent } from './events/event-list/event-item/event-item.component';
+import { EventCreateComponent } from './events/event-create/event-create.component';
+import { EventCreateNameComponent } from './events/event-create/event-create-name/event-create-name.component';
+import { EventCreateDetailsComponent } from './events/event-create/event-create-details/event-create-details.component';
+import { EventCreateGuestsComponent } from './events/event-create/event-create-guests/event-create-guests.component';
+import { EventCreateItemsComponent } from './events/event-create/event-create-items/event-create-items.component';
+import { EventCreateSummaryComponent } from './events/event-create/event-create-summary/event-create-summary.component';
+import { EventCreateErrorComponent } from './events/event-create/event-create-error/event-create-error.component';
 
 
 @NgModule({
@@ -28,13 +33,18 @@ import { EventDetailComponent } from './events/event-detail/event-detail.compone
     HomeComponent,
     AboutComponent,
     NavComponent,
-    ServerComponent,
-    ServersComponent,
     UserComponent,
     EventsComponent,
-    CreateComponent,
     EventListComponent,
-    EventDetailComponent
+    EventDetailComponent,
+    EventItemComponent,
+    EventCreateComponent,
+    EventCreateNameComponent,
+    EventCreateDetailsComponent,
+    EventCreateGuestsComponent,
+    EventCreateItemsComponent,
+    EventCreateSummaryComponent,
+    EventCreateErrorComponent
   ],
   imports: [
     BrowserModule,
