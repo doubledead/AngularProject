@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { RouterModule } from '@angular/router';
-// import { rootRouterConfig } from './app.routes'
 import { UIRouterModule, UIView } from '@uirouter/angular';
 import { APP_STATES } from './app.states';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -51,7 +49,6 @@ import { EventCreateErrorComponent } from './events/event-create/event-create-er
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
-    // RouterModule.forRoot(rootRouterConfig, { useHash: true })
     UIRouterModule.forRoot({
       states: APP_STATES,
       useHash: true,
