@@ -1,16 +1,17 @@
 export class Event {
   public id: number;
-  // public createDate: Date;
+  public createDate: Date;
   public description: string;
   // public endDate: Date;
-  public imagePath: string;
   public name: string;
+  public statusId: number;
   // public startDate: Date;
 
-  constructor(id: number, description: string, imagePath: string, name: string ) {
+  constructor(id: number, createDate: Date, description: string, name: string, statusId: number ) {
     this.id = id;
+    this.createDate = createDate;
     this.description = description;
-    this.imagePath = imagePath;
     this.name = name;
+    this.statusId = statusId;
   }
 }

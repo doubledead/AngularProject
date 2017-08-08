@@ -57,13 +57,13 @@ export const eventListState = {
   url: '/list',
   component: EventListComponent,
 };
-
+/*
 export const eventDetailState = {
   name: 'events.detail',
   url: '/detail',
   component: EventDetailComponent,
 };
-
+*/
 // Event Create stated with three level down nested states
 export const eventCreateState = {
   name: 'events.create',
@@ -92,7 +92,7 @@ export const APP_STATES = [
   userState,
   eventState,
   eventListState,
-  eventDetailState,
+  // eventDetailState,
   eventCreateState,
   eventCreateNameState,
   eventCreateDetailsState

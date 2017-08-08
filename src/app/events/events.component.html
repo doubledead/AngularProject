@@ -7,9 +7,14 @@
   <ul class="breadcrumb">
     <li><a uiSref="events.list">List</a></li>
     <li><a uiSref="events.create.name">Create</a></li>
-    <li><a uiSref="events.detail">Detail</a></li>
+    <!-- <li><a uiSref="events.detail">Detail</a></li> -->
   </ul>
 </div>
 <div class="container">
   <ui-view></ui-view>
 </div>
+<!--
+<div class="container">
+   <app-event-item *ngFor="let e of eventsList" [ev]="e"></app-event-item>
+</div>
+-->
