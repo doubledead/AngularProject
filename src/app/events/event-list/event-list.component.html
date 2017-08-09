@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
-    <h5>Event List</h5>
+    <h4>Event List</h4>
   </div>
 </div>
 <div class="container">
-  <!-- <app-event-item *ngFor="let e of events" [event]="e"></app-event-item> -->
+  <app-new-event></app-new-event>
+</div>
+<div class="container">
   <app-event-item
     *ngFor="let e of events"
     [ev]="e"></app-event-item>

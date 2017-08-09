@@ -23,6 +23,7 @@ import { EventCreateItemsComponent } from './events/event-create/event-create-it
 import { EventCreateSummaryComponent } from './events/event-create/event-create-summary/event-create-summary.component';
 import { EventCreateErrorComponent } from './events/event-create/event-create-error/event-create-error.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { NewEventComponent } from './events/new-event/new-event.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     EventCreateItemsComponent,
     EventCreateSummaryComponent,
     EventCreateErrorComponent,
-    DropdownDirective
+    DropdownDirective,
+    NewEventComponent
   ],
   imports: [
     BrowserModule,
