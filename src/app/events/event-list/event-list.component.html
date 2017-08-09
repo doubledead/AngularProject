@@ -3,11 +3,5 @@
     <h4>Event List</h4>
   </div>
 </div>
-<div class="container">
-  <app-new-event></app-new-event>
-</div>
-<div class="container">
-  <app-event-item
-    *ngFor="let e of events"
-    [ev]="e"></app-event-item>
-</div>
+<app-new-event></app-new-event>
+<app-event-item *ngFor="let e of events" [ev]="e"></app-event-item>
