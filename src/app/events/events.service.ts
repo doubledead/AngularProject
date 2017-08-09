@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
-
+import { EventEmitter, Injectable } from '@angular/core';
 import { Event } from './event.model';
+
+import { LoggingService } from '../shared/services/logging.service';
 
 @Injectable()
 export class EventsService {
@@ -11,6 +12,10 @@ export class EventsService {
     {id: 3, createDate: new Date(), description: 'Event3', name: 'Event 3', statusId: 1}
   ];
 
+  constructor(private loggingService: LoggingService) { }
+
+  statusUpdated = new EventEmitter<number>();
+
   addEvent(id: number, createDate: Date, description: string, name: string, statusId: number) {
     this.eventsList.push({
       id: id,
@@ -19,8 +24,7 @@ export class EventsService {
       name: name,
       statusId: statusId
     });
+    this.loggingService.logStatusChange(statusId);
   }
-
-  constructor() { }
 
 }

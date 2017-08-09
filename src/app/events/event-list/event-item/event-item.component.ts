@@ -12,7 +12,8 @@ export class EventItemComponent implements OnInit {
   // @Input() event: {id: number, description: string, imagePath: string, name: string};
   // Custom property alias
   // @Input('ev') event: {id: number, description: string, imagePath: string, name: string};
-  @Input('ev') event: Event;
+  // Custom property using Event model
+  @Input() event: Event;
 
   constructor() { }
 

@@ -24,6 +24,8 @@ import { EventCreateSummaryComponent } from './events/event-create/event-create-
 import { EventCreateErrorComponent } from './events/event-create/event-create-error/event-create-error.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { NewEventComponent } from './events/new-event/new-event.component';
+import { AccountService } from './account.service';
+import { LoggingService} from './shared/services/logging.service';
 
 
 @NgModule({
@@ -59,7 +61,8 @@ import { NewEventComponent } from './events/new-event/new-event.component';
       otherwise: {state: 'home'}
     })
   ],
-  providers: [],
+  /*This is the only level that can have services that can be injected into other services. */
+  providers: [AccountService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
