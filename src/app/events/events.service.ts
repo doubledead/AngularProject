@@ -27,4 +27,9 @@ export class EventsService {
     this.loggingService.logStatusChange(statusId);
   }
 
+  updateStatus(id: number, statusId: number) {
+    this.eventsList[id].statusId = statusId;
+    this.loggingService.logStatusChange(statusId);
+  }
+
 }

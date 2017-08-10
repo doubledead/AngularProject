@@ -4,6 +4,6 @@
   </div>
 </div>
 <app-new-event></app-new-event>
-<app-event-item *ngFor="let event of events" [event]="event">
+<app-event-item *ngFor="let event of events; let i = index" [event]="event" [id]="i">
 
 </app-event-item>

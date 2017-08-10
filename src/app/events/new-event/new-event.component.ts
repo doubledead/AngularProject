@@ -7,11 +7,12 @@ import { EventsService } from '../events.service';
   templateUrl: './new-event.component.html',
   styleUrls: ['./new-event.component.css']
 })
-export class NewEventComponent implements OnInit {
+export class NewEventComponent {
 
-  constructor(private eventsService: EventsService) { }
-
-  ngOnInit() {
+  constructor(private eventsService: EventsService) {
+    this.eventsService.statusUpdated.subscribe(
+      (statusId: number) => alert('New Status: ' + statusId)
+    );
   }
 
   onCreateEvent(eventName: string) {
