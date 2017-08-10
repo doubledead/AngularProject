@@ -10,12 +10,13 @@ import { EventsService } from './events.service';
 })
 export class EventsComponent implements OnInit {
 
-  events: {id: number, createDate: Date, description: string, name: string, statusId: number}[] = [];
+  // events: {id: number, createDate: Date, description: string, name: string, statusId: number}[] = [];
 
-  constructor(private eventsService: EventsService) { }
+  // constructor(private eventsService: EventsService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.events = this.eventsService.eventsList;
+    // this.events = this.eventsService.getEvents();
   }
 
 }

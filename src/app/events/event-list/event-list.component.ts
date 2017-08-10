@@ -11,11 +11,10 @@ export class EventListComponent implements OnInit {
 
   events: {id: number, createDate: Date, description: string, name: string, statusId: number}[] = [];
 
-
   constructor(private eventsService: EventsService) { }
 
   ngOnInit() {
-    this.events = this.eventsService.eventsList;
+    this.events = this.eventsService.getEvents();
   }
 
 }
