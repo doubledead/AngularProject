@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+
 import { Event } from './event.model';
 
 import { LoggingService } from '../shared/services/logging.service';
@@ -15,6 +16,8 @@ export class EventsService {
   constructor(private loggingService: LoggingService) { }
 
   statusUpdated = new EventEmitter<number>();
+
+  eventSelected = new EventEmitter<Event>();
 
   getEvents() {
     return this.events.slice();

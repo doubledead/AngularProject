@@ -24,4 +24,8 @@ export class EventItemComponent {
     this.eventsService.statusUpdated.emit(statusId);
   }
 
+  onSelected() {
+    this.eventsService.eventSelected.emit(this.event);
+  }
+
 }
